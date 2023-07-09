@@ -1,0 +1,8 @@
+*.txt
+App/Data/
+Images
+QG
+*.pdf
+QG/response.txt
+QG/survey_results.png
+App/settings.py
