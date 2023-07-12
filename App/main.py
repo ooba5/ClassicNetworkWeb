@@ -37,7 +37,6 @@ def home():
 
 @app.route("/book", methods=["POST"])
 def book():
-    # book = request.headers.get("book")
     content = request.json
     session["book"] = content["name"]
     return "OK"
