@@ -1,10 +1,13 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./static/home_style.css">
 </head>
 <body>
-<div class="row">
+<nav class="navbar navbar-dark bg-dark">
+  <div class="row">
   <div class="col">
+      <li class="nav-item dropdown">
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Classics
@@ -19,10 +22,21 @@
               <a class="dropdown-item" onclick="ExecPythonCommand('GreatExpectations')">Great Expectations</a>
           </div>
       </div>
+      </li>
   </div>
-  <div class="col"><a href="/About">About</a></div>
+  <div class = "col">
+      <li class="nav-item">
+          <a class="nav-link" href="/About">About</a>
+      </li>
+  </div>
+
+  <span class="navbar-text">
+    {{title | safe }}
+  </span>
 
 </div>
+</nav>
+
 
 {{viz | safe }}
 
